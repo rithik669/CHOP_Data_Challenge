@@ -22,26 +22,47 @@ Part 2: Create additional fields
 With your drug overdose encounter, create the following indicators:
 
 DEATH_AT_VISIT_IND: 1 if patient died during the drug overdose encounter, 0 if the patient died at a different time
+
 COUNT_CURRENT_MEDS: Count of active medications at the start of the drug overdose encounter
+
 CURRENT_OPIOID_IND: 1 if the patient had at least one active medication at the start of the overdose encounter that is on the Opioids List (provided below), 0 if not
+
 READMISSION_90_DAY_IND: 1 if the visit resulted in a subsequent drug overdose readmission within 90 days, 0 if not
+
 READMISSION_30_DAY_IND: 1 if the visit resulted in a subsequent drug overdose readmission within 30 days, 0 if not overdose encounter, 0 if not
+
 FIRST_READMISSION_DATE: The date of the index visit's first readmission for drug overdose. Field should be left as N/A if no readmission for drug overdose within 90 days
+
 Part 3: Export the data to a CSV file
+
 Export a dataset containing these required fields:
 
 Field name	Field Description	Data Type
+
 PATIENT_ID	Patient identifier	Character String
+
 ENCOUNTER_ID	Visit identifier	Character string
+
 HOSPITAL_ENCOUNTER_DATE	Beginning of hospital encounter date	Date/time
+
 AGE_AT_VISIT	Patient age at admission	Num
+
 DEATH_AT_VISIT_IND	Indicator if the patient died during the drug overdose encounter. Leave N/A if patient has not died,	0 /1
+
 COUNT_CURRENT_MEDS	Count of active medications at the start of the drug overdose encounter	Num
+
 CURRENT_OPIOID_IND	if the patient had at least one active medication at the start of the overdose encounter that is on the Opioids List (provided below)	0/1
+
 READMISSION_90_DAY_IND	Indicator if the visit resulted in a subsequent readmission within 90 days	0/1
+
 READMISSION_30_DAY_IND	Indicator if the visit resulted in a subsequent readmission within 30 days	0/1
+
 FIRST_READMISSION_DATE	Date of the first readmission for drug overdose within 90 days. Leave N/A if no readmissions for drug overdose within 90 days.	Date/time
+
 Opioids List:
+
 Hydromorphone 325Mg
+
 Fentanyl – 100 MCG
+
 Oxycodone-acetaminophen 100 Ml
