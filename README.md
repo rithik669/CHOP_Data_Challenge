@@ -1,12 +1,12 @@
 # CHOP_Data_Challenge
 
 Data Exercise
-This data exercise represents an example of the type of data work we complete. We estimate that the exercise will take 2-3 hours to complete. Please use whatever statistical programming language, programming language, or data manipulation tool you are most comfortable with (SAS, R, SPSS, STATA, Python, SQL, etc).Please note, if you choose to alias tables in your code, we ask that you use descriptive aliases and not single letters.
 
 This exercise will evaluate your ability to build a cohort of patients and calculate some metrics related to that cohort. You should have the following:
 
 5 datasets (all data you need is found within the provided datasets)
 A data dictionary defining each dataset and its fields
+
 Instructions
 We encourage you to put the data ingest and export as part of a re-usable analysis script. Examples of different functions that can be used are found here. This makes it easier for us to re-run your code in our evaluations, and it's good coding practice!
 
