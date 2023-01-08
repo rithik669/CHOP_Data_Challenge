@@ -1,16 +1,18 @@
 # CHOP_Data_Challenge
 
-Data Exercise
+DATA EXERCISE
 
 This exercise will evaluate your ability to build a cohort of patients and calculate some metrics related to that cohort. You should have the following:
 
 5 datasets (all data you need is found within the provided datasets)
 A data dictionary defining each dataset and its fields
 
-Instructions
+INSTRUCTIONS
+
 We encourage you to put the data ingest and export as part of a re-usable analysis script. Examples of different functions that can be used are found here. This makes it easier for us to re-run your code in our evaluations, and it's good coding practice!
 
-Part 1: Assemble the project cohort
+PART 1: ASSEMBLE THE PROJECT COHORT
+
 The project goal is to identify patients seen for drug overdose, determine if they had an active opioid at the start of the encounter, and if they had any readmissions for drug overdose.
 
 Your task is to assemble the study cohort by identifying encounters that meet the following criteria:
@@ -18,7 +20,9 @@ Your task is to assemble the study cohort by identifying encounters that meet th
 The patient’s visit is an encounter for drug overdose
 The hospital encounter occurs after July 15, 1999
 The patient’s age at time of encounter is between 18 and 35 (Patient is considered to be 35 until turning 36)
-Part 2: Create additional fields
+
+PART 2: CREATE ADDITIONAL FIELDS
+
 With your drug overdose encounter, create the following indicators:
 
 DEATH_AT_VISIT_IND: 1 if patient died during the drug overdose encounter, 0 if the patient died at a different time
@@ -33,7 +37,7 @@ READMISSION_30_DAY_IND: 1 if the visit resulted in a subsequent drug overdose re
 
 FIRST_READMISSION_DATE: The date of the index visit's first readmission for drug overdose. Field should be left as N/A if no readmission for drug overdose within 90 days
 
-Part 3: Export the data to a CSV file
+PART 3: EXPORT THE DATA TO A CSV FILE
 
 Export a dataset containing these required fields:
 
@@ -59,7 +63,8 @@ READMISSION_30_DAY_IND	Indicator if the visit resulted in a subsequent readmissi
 
 FIRST_READMISSION_DATE	Date of the first readmission for drug overdose within 90 days. Leave N/A if no readmissions for drug overdose within 90 days.	Date/time
 
-Opioids List:
+
+OPIODS_LIST
 
 Hydromorphone 325Mg
 
